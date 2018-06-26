@@ -24,7 +24,7 @@
     "react": "16.x"
   },
   "devDependencies": {
-    "nb": "0.0.4",
+    "np": "^3.0.4",
     "nwb": "0.21.x",
     "prop-types": "^15.6.2",
     "react": "^16.4.1",
