@@ -2,9 +2,9 @@ import expect from 'expect'
 import React from 'react'
 import {render, unmountComponentAtNode} from 'react-dom'
 
-import Component from 'src/'
+import Grid from 'src/'
 
-describe('Component', () => {
+describe('Grid', () => {
   let node
 
   beforeEach(() => {
@@ -16,8 +16,8 @@ describe('Component', () => {
   })
 
   it('displays a welcome message', () => {
-    render(<Component/>, node, () => {
-      expect(node.innerHTML).toContain('Welcome to React components')
+    render(<Grid user={{name:"arnas"}}/>, node, () => {
+      expect(node.innerHTML).toContain("Welcome to Grid")
     })
   })
 })

@@ -16,14 +16,17 @@
     "start": "nwb serve-react-demo",
     "test": "nwb test-react",
     "test:coverage": "nwb test-react --coverage",
-    "test:watch": "nwb test-react --server"
+    "test:watch": "nwb test-react --server",
+    "release": "npm run build && np"
   },
   "dependencies": {},
   "peerDependencies": {
     "react": "16.x"
   },
   "devDependencies": {
+    "nb": "0.0.4",
     "nwb": "0.21.x",
+    "prop-types": "^15.6.2",
     "react": "^16.4.1",
     "react-dom": "^16.4.1"
   },
@@ -32,6 +35,7 @@
   "license": "MIT",
   "repository": "",
   "keywords": [
-    "react-component"
+    "track24",
+    "grid"
   ]
 }

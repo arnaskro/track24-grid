@@ -1,13 +1,12 @@
 import React, {Component} from 'react'
 import {render} from 'react-dom'
 
-import Example from '../../src'
+import Grid from '../../src'
 
 class Demo extends Component {
   render() {
     return <div>
-      <h1>track24-grid Demo</h1>
-      <Example/>
+      <Grid user={{ name: "Arnas" }}/>
     </div>
   }
 }
