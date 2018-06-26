@@ -1,6 +1,6 @@
 {
   "name": "track24-grid",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "track24-grid React component",
   "main": "lib/index.js",
   "module": "es/index.js",
