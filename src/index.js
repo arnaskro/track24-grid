@@ -1,4 +1,5 @@
 export default {
   component: require('./components/App'),
-  reducer: require('./reducers/')
+  reducer: require('./reducers/'),
+  name: 'Grid'
 }
