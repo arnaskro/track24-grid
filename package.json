@@ -1,6 +1,6 @@
 {
   "name": "track24-grid",
-  "version": "1.1.0",
+  "version": "1.0.1",
   "description": "track24-grid React component",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -19,9 +19,7 @@
     "test:watch": "nwb test-react --server",
     "release": "npm run build && np"
   },
-  "dependencies": {
-    "systemjs": "^0.21.4"
-  },
+  "dependencies": {},
   "peerDependencies": {
     "react": "16.x"
   },
@@ -36,7 +34,7 @@
     "redux-thunk": "^2.3.0",
     "scriptjs": "^2.5.8"
   },
-  "author": "",
+  "author": "Arnas Kromelis <arnas@kromelis.lt>",
   "homepage": "",
   "license": "MIT",
   "repository": "",
