@@ -4,7 +4,7 @@ import './index.css';
 
 
 import { Provider } from 'react-redux';
-import store from '../../src/reducers';
+import store from '../../src/store';
 
 import Grid from '../../src/components/App'
 
