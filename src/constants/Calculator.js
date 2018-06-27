@@ -1,0 +1,4 @@
+export default {
+    INCREASE: 'CALCULATOR_INCREASE',
+    DECREASE: 'CALCULATOR_DECREASE',
+};

@@ -1,19 +1,6 @@
-import React, {Component} from 'react'
-import PropTypes from 'prop-types';
-
-class Grid extends Component {
-  render() {
-    return <div>
-      <h2>Welcome to Grid</h2>
-      {this.props.user.name}
-    </div>
-  }
+export default {
+  component: require('./components/App'),
+  actions: require('./actions/index'),
+  store: require('./reducers/index'),
+  name: 'Grid'
 }
-
-Grid.propTypes = {
-  user: PropTypes.shape({
-    name: PropTypes.string.isRequired,
-  })
-}
-
-export default Grid;
