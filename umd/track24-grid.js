@@ -2159,7 +2159,7 @@ var Calculator = function (_Component) {
 
 var mapStateToProps = function mapStateToProps(state) {
     console.log(state);
-    if (state.Grid) return _extends({}, state.calculator);else return _extends({}, state.Grid.calculator);
+    if (state && state.Grid) return _extends({}, state.Grid.calculator);else if (state) return _extends({}, state.calculator);else return {};
 };
 
 var mapDisptachToProps = function mapDisptachToProps(dispatch) {
