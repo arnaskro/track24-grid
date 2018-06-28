@@ -48,8 +48,9 @@ class Calculator extends Component {
 
 const mapStateToProps = (state) => {
     console.log(state)
-    if (state.Grid) return {...state.calculator};
-    else            return {...state.Grid.calculator};
+    if (state && state.Grid) return {...state.Grid.calculator};
+    else if (state)          return {...state.calculator};
+    else                     return {};
 };
 
 const mapDisptachToProps = (dispatch) => {
