@@ -2158,7 +2158,8 @@ var Calculator = function (_Component) {
 }(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
 
 var mapStateToProps = function mapStateToProps(state) {
-    return _extends({}, state.calculator);
+    console.log(state);
+    if (state.Grid) return _extends({}, state.calculator);else return _extends({}, state.Grid.calculator);
 };
 
 var mapDisptachToProps = function mapDisptachToProps(dispatch) {
