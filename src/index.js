@@ -1,11 +1,5 @@
-export default {
-  component: require('./components/App'),
-  reducer: require('./reducers/'),
-  reducers: [
-    {
-      path: "Calculator",
-      reducer: require('./reducers/CalculatorReducer')
-    }
-  ],
-  name: 'Grid'
-}
+import { withReducer } from 'react-redux-dynamic-reducer';
+import Grid from './components/App';
+import reducer from './reducers/';
+
+export default withReducer(reducer, 'Grid')(Grid);
