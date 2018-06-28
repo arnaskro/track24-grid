@@ -3357,8 +3357,9 @@ var Greeting = function (_Component) {
 }(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
 
 var mapStateToProps = function mapStateToProps(state) {
+    console.log(state);
     return {
-        name: state.main.user.name
+        name: ""
     };
 };
 

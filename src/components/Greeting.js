@@ -12,8 +12,9 @@ class Greeting extends Component {
 }
 
 const mapStateToProps = (state) => {
+    console.log(state)
     return {
-        name: state.main.user.name
+        name: ""
     }
 };
 
