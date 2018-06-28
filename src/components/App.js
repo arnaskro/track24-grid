@@ -1,12 +1,13 @@
 import React, {Component} from 'react'
 import PropTypes from 'prop-types';
 import Calculator from './Calculator';
+import Greeting from './Greeting';
 
 class Grid extends Component {
   render() {
     return <div>
       <h2>Welcome to Grid</h2>
-      {this.props.user.name}
+      <Greeting />
       <br /><br /><br />
       <Calculator />
     </div>
