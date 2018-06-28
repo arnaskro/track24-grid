@@ -12,10 +12,10 @@ class Greeting extends Component {
 }
 
 const mapStateToProps = (state) => {
-    console.log(state)
-    return {
-        name: ""
-    }
+    
+    if (state && state.main && state.main.user)
+        return { name: state.main.user.name }
+    else return { name: "-" }
 };
 
 export default connect(mapStateToProps)(Greeting);

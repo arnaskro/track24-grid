@@ -3357,10 +3357,8 @@ var Greeting = function (_Component) {
 }(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
 
 var mapStateToProps = function mapStateToProps(state) {
-    console.log(state);
-    return {
-        name: ""
-    };
+
+    if (state && state.main && state.main.user) return { name: state.main.user.name };else return { name: "-" };
 };
 
 /* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_1_react_redux__["a" /* connect */])(mapStateToProps)(Greeting));
