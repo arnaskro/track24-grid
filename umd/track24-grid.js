@@ -2132,16 +2132,18 @@ var Calculator = function (_Component) {
 
         var _this = _possibleConstructorReturn(this, _Component.call(this, props));
 
-        _this._increase = function () {
+        _this._increase = function (e) {
+            e.preventDefault();
             _this.props.actions.add(_this.state.input);
         };
 
-        _this._decrease = function () {
+        _this._decrease = function (e) {
+            e.preventDefault();
             _this.props.actions.subtract(_this.state.input);
         };
 
-        _this._updateInput = function (val) {
-            _this.setState({ input: parseInt(val) });
+        _this._updateInput = function (e) {
+            _this.setState({ input: parseInt(e.target.value) });
         };
 
         _this.state = {
@@ -2167,10 +2169,9 @@ var Calculator = function (_Component) {
             }),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Button, { text: 'Increase', callback: this._increase }),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Button, { text: 'Decrease', callback: this._decrease })
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Button, { text: 'Increase', onClick: this._increase }),
+            ' ',
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Button, { text: 'Decrease', onClick: this._decrease })
         );
     };
 

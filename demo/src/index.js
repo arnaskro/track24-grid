@@ -6,6 +6,6 @@ import './index.css';
 window.React = React;
 
 // Import Framework
-script('https://unpkg.com/track24-framework@1.1.1/umd/track24-framework.min.js', () => {
+script('http://d16zglms8etrud.cloudfront.net/framework/track24-framework.js', () => {
   require('./Demo')
 })

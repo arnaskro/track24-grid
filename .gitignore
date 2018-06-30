@@ -3,4 +3,6 @@
 /es
 /lib
 /node_modules
+/umd
+umd/
 npm-debug.log*

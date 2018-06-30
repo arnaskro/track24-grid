@@ -15,16 +15,18 @@ class Calculator extends Component {
         }
     }
 
-    _increase = () => {
+    _increase = (e) => {
+        e.preventDefault()
         this.props.actions.add(this.state.input)
     }
 
-    _decrease = () => {
+    _decrease = (e) => {
+        e.preventDefault()
         this.props.actions.subtract(this.state.input)
     }
 
-    _updateInput = (val) => {
-        this.setState({ input: parseInt(val) })
+    _updateInput = (e) => {
+        this.setState({ input: parseInt(e.target.value) })
     }
 
     render() {
@@ -38,9 +40,7 @@ class Calculator extends Component {
                     placeholder="Your number here"
                     />
                 <br /><br />
-                <Button text="Increase" callback={this._increase} />
-                <br /><br />
-                <Button text="Decrease" callback={this._decrease} />
+                <Button text="Increase" onClick={this._increase} /> <Button text="Decrease" onClick={this._decrease} />
             </div>
         )
     }
